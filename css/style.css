@@ -10613,6 +10613,27 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
 }
 
+.technologies {
+  padding: 3rem 1.5rem;
+  margin-right: 0;
+  margin-left: 0;
+  background-color: #fff;
+}
+
+.technologies h2 {
+  color: #777;
+}
+
+.technologies img {
+  width: 40px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 30px 35px 0;
+  border: none;
+  border-radius: 0;
+  opacity: .5;
+}
+
 .card-deck {
   margin: 0 0 3rem;
 }
