@@ -18,6 +18,19 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox
 if (workbox) {
   console.log('Yay! Workbox is loaded');
 
+  // // Network First
+  // [
+  //   '/$',  // Index
+  //   '/*',  // Anything in the same host
+  //   '.+/*' // Anything in any host
+  // ]
+  // .forEach(mask => {
+  //   workbox.routing.registerRoute(
+  //       new RegExp(mask),
+  //       new workbox.strategies.NetworkFirst( { cacheName: 'dynamic' } )
+  //   );
+  // });
+
   // Force production builds, set to false
   workbox.setConfig({ debug: false });
 
@@ -29,23 +42,23 @@ if (workbox) {
   workbox.precaching.precacheAndRoute([
   {
     "url": "contact.html",
-    "revision": "f4f118e749a11157cd3b027b5fdedb7f"
+    "revision": "694690361967aeb0237aeff2ed20abc6"
   },
   {
     "url": "css/style.min.css",
-    "revision": "c837e6f072cd6f90eaa9081eb1dd1cf0"
+    "revision": "1293d9fb45e7070d2d2332287b55e512"
   },
   {
     "url": "index.html",
-    "revision": "bab9ea2215de97e86a6fcaf054970c41"
+    "revision": "cab1eb0663e0ec9e515c14a43bd93079"
   },
   {
     "url": "info.html",
-    "revision": "7e149b82762811b259729f7414d3d965"
+    "revision": "2ac30b3fc4e6e90a5f65e7cf663bc5fe"
   },
   {
     "url": "js/script.min.js",
-    "revision": "120963dc0313399eb537ecca0c249112"
+    "revision": "07af9eee5f29f5828aec91061cfeb3c2"
   },
   {
     "url": "js/vendor/unikorn.umd.min.js",
@@ -53,11 +66,11 @@ if (workbox) {
   },
   {
     "url": "portfolio.html",
-    "revision": "53298764e5981afbb2c613e968cde1e2"
+    "revision": "c3fdf3701d2b998a450c8c607777362a"
   },
   {
     "url": "services.html",
-    "revision": "d8f13c861d451cdccdadd4363921dd23"
+    "revision": "4f7aae7a8d8ac612cf7127943f54670e"
   }
 ]);
 
